@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import DataGrid from './DataGrid';
+import './App.css';
+
 
 class App extends Component {
 
@@ -17,7 +18,6 @@ class App extends Component {
       ["", "Seat", "Renault", "Mercedes", "Audi"],
       ["2016", 1, 3, 1, 1],
       ["2017", 2, 1, 2, 1],
-      ["2018", 3, 1, 1, 3]
     ];
 
     return (
@@ -26,8 +26,12 @@ class App extends Component {
           <h2>Handsontable React Component</h2>
         </div>
         <div className="App-body">
-          <DataGrid container="datagrid1" data={data1} />
-          <DataGrid container="datagrid2" data={data2} />
+          <div className="App-section">
+            <DataGrid container="datagrid1" data={data1} />
+          </div>
+          <div className="App-section">
+            <DataGrid container="datagrid2" data={data2} />
+          </div>
         </div>
       </div>
     );
