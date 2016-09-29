@@ -4,7 +4,7 @@
 
 **Proof of concept**: React datagrid component using [Handsontable javascript library](https://handsontable.com/). It is reusable since their datagrid data and it's DOM element are both parameters.
 
->**Especial configuration**: Handsontable do not work well with Webpack as it cannot resolve some dependencies. As we are using react-create-app, ['npm run eject'](https://www.npmjs.com/package/react-scripts) was necessary in order to access the webpack configuration. An small workaround was implemented in Webpack dev/prod config files following [this instructions.](https://github.com/handsontable/handsontable/issues/3718)
+>**Especial configuration**: Handsontable do not work well with Webpack as it cannot resolve some dependencies. As we are using react-create-app, ['npm run eject'](https://www.npmjs.com/package/react-scripts) was necessary in order to access the webpack configuration. A small workaround was implemented in Webpack dev/prod config files following [this instructions.](https://github.com/handsontable/handsontable/issues/3718)
 
 ---
 
